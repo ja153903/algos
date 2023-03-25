@@ -1,0 +1,9 @@
+[tool.pyright]
+include = ["./src"]
+venv = "algorithms"
+
+reportMissingImports = true
+reportMissingTypeStubs = true
+
+pythonVersion = "3.11"
+
