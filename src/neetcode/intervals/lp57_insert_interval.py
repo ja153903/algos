@@ -18,6 +18,7 @@ class Solution:
             result.append(intervals[i])
             i += 1
 
+        # NOTE: Take note of this part of the algorithm. This is the clever part.
         # update the interval we want to merge as we go along the list of intervals
         # this way we can just insert 1 interval
         while i < n and intervals[i][0] <= new_interval[1]:
