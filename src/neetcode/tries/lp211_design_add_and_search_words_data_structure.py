@@ -40,7 +40,7 @@ class WordDictionary:
 
             match char:
                 case ".":
-                    for key, node in current.children.items():
+                    for node in current.children.values():
                         if self._dfs(word, node, i + 1):
                             return True
                     return False
